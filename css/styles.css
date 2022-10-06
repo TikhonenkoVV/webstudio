@@ -131,6 +131,10 @@ body {
     color: var(--designcolor);
 }
 
+.section {
+    padding: 94px 0;
+}
+
 .hero {
     background-color: var(--alt-bgr-color);
     padding: 200px 0;
@@ -179,7 +183,6 @@ body {
 
 .advantage {
     background-color: var(--white-color);
-    padding: 94px 0;
 }
 
 .advantage-list {
@@ -216,7 +219,7 @@ body {
 }
 
 .types-of-work {
-    padding-bottom: 94px;
+    padding-bottom: 0 0 94px 0;
     background-color: var(--white-color);
 }
 
@@ -226,7 +229,6 @@ body {
 }
 
 .team {
-    padding: 94px 0;
     background-color: #f5f4fa;
 }
 
@@ -262,7 +264,6 @@ body {
 
 .projects {
     background-color: var(--white-color);
-    padding: 94px 0;
 }
 
 .filter-project-list {
