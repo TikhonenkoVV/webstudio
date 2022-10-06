@@ -9,41 +9,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Портфоліо</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="wraper">
+        <div class="container">
             <nav class="navigation">
                 <a class="logo link" href="./index.html" lang="en">Web<span class="header-logo-span">Studio</span></a>
                 <ul class="navigation-list list">
                     <li class="navigation-list-item">
-                        <a class="link" href="./index.html">Студія</a>
+                        <a class="navigation-link link" href="./index.html">Студія</a>
                     </li>
                     <li class="navigation-list-item">
-                        <a class="current-page link" href="./portfolio.html">Портфоліо</a>
+                        <a class="current-page navigation-link link" href="./portfolio.html">Портфоліо</a>
                     </li>
                     <li class="navigation-list-item">
-                        <a class="link" href="#">Контакти</a>
+                        <a class="navigation-link link" href="#">Контакти</a>
                     </li>
                 </ul>
             </nav>
             <ul class="contacts-list list">
                 <li class="contacts-list-item">
-                    <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="contacts-list-item">
-                    <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
     </header>
     <main>
         <section class="projects">
-            <div class="wraper wrapercolumn">
-                <h1 hidden>Проекти</h1>
+            <div class="container wrapper-column">
+                <h1 class="subtitle visually-hidden">Проекти</h1>
                 <ul class="filter-project-list list">
                     <li class="filter-project-list-item">
                         <button class="btn-filter current-btn" type="button">
@@ -72,9 +80,9 @@
                     </li>
                 </ul>
                 <ul class="project-list list">
-                    <li class="project-list-item">
+                    <li class="project-list-item wrapper-column">
                         <a href="#" class="link">
-                            <div class="container">
+                            <div class="project-list-item-container">
                                 <img src="./images/tehnokrack.jpg" alt="Веб-сайт Технокряк" width="370" height="294" />
                             </div>
                             <div class="content-box">
@@ -85,9 +93,9 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list-item">
+                    <li class="project-list-item wrapper-column">
                         <a href="#" class="link">
-                            <div class="container">
+                            <div class="project-list-item-container">
                                 <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370"
                                     height="294" />
                             </div>
@@ -99,9 +107,9 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list-item wrapercolumn">
+                    <li class="project-list-item wrapper-column">
                         <a href="#" class="link">
-                            <div class="container">
+                            <div class="project-list-item-container">
                                 <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370" height="294" />
                             </div>
                             <div class="content-box">
@@ -112,9 +120,9 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list-item wrapercolumn">
+                    <li class="project-list-item wrapper-column">
                         <a href="#" class="link">
-                            <div class="container">
+                            <div class="project-list-item-container">
                                 <img src="./images/prime.jpg" alt="Проєкт Prime" width="370" height="294" />
                             </div>
                             <div class="content-box">
@@ -125,9 +133,9 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list-item wrapercolumn">
+                    <li class="project-list-item wrapper-column">
                         <a href="#" class="link">
-                            <div class="container">
+                            <div class="project-list-item-container">
                                 <img src="./images/boxes.jpg" alt="Проєкт Boxes" width="370" height="294" />
                             </div>
                             <div class="content-box">
@@ -138,9 +146,9 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list-item wrapercolumn">
+                    <li class="project-list-item wrapper-column">
                         <a href="#" class="link">
-                            <div class="container">
+                            <div class="project-list-item-container">
                                 <img src="./images/inspiration-has-no-borders.jpg"
                                     alt="Веб-сайт Inspiration has no Borders" width="370" height="294" />
                             </div>
@@ -152,9 +160,9 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list-item wrapercolumn">
+                    <li class="project-list-item wrapper-column">
                         <a href="#" class="link">
-                            <div class="container">
+                            <div class="project-list-item-container">
                                 <img src="./images/limited-edition.jpg" alt="Видання Limited Edition" width="370"
                                     height="294" />
                             </div>
@@ -166,9 +174,9 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list-item wrapercolumn">
+                    <li class="project-list-item wrapper-column">
                         <a href="#" class="link">
-                            <div class="container">
+                            <div class="project-list-item-container">
                                 <img src="./images/lab.jpg" alt="Проєкт LAB" width="370" height="294" />
                             </div>
                             <div class="content-box">
@@ -179,9 +187,9 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list-item wrapercolumn">
+                    <li class="project-list-item wrapper-column">
                         <a href="#" class="link">
-                            <div class="container">
+                            <div class="project-list-item-container">
                                 <img src="./images/growing-business.jpg" alt="Додаток Growing Business" width="370"
                                     height="294" />
                             </div>
@@ -197,21 +205,21 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="wraper wrapercolumn">
+    <footer class="footer">
+        <div class="container wrapper-column">
             <a class="footer-logo link" href="./index.html" lang="en">Web<span
                     class="footer-logo-span">Studio</span></a>
             <address>
                 <ul class="address-list list">
                     <li class="address-list-item">
-                        <a class="link external-link" href="https://goo.gl/maps/eqV23aZUYZTrV4pg6" target="_blank"
-                            rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+                        <a class="address-link link external-link" href="https://goo.gl/maps/eqV23aZUYZTrV4pg6"
+                            target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
                     </li>
                     <li class="address-list-item">
-                        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li class="address-list-item">
-                        <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="address-link link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </address>

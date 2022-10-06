@@ -2,7 +2,7 @@
     --titlecolor: #212121;
     --designcolor: #2196f3;
     --textcolor: #757575;
-    --bgr-color: #fff;
+    --white-color: #fff;
     --alt-bgr-color: #2f303a;
 }
 
@@ -11,8 +11,8 @@
     padding: 0;
 }
 
-html {
-    width: 100%;
+img {
+    display: block;
 }
 
 body {
@@ -20,7 +20,6 @@ body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     color: var(--textcolor);
-    box-sizing: ;
 }
 
 .link {
@@ -49,15 +48,17 @@ body {
     margin: -1px;
 }
 
-.wraper {
-    width: 1170px;
+.container {
+    width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
 }
 
-.wrapercolumn {
+.wrapper-column {
     flex-direction: column;
+    /* align-items: center; */
 }
 
 .header {
@@ -79,7 +80,7 @@ body {
 }
 
 .footer-logo-span {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .logo {
@@ -112,8 +113,8 @@ body {
     color: var(--titlecolor);
 }
 
-.navigation-list-item > .link:hover,
-.navigation-list-item > .link:focus {
+.navigation-link:hover,
+.navigation-link:focus {
     color: var(--designcolor);
 }
 
@@ -131,16 +132,21 @@ body {
     letter-spacing: 0.02em;
 }
 
-.contacts-list-item > .link:hover,
-.contacts-list-item > .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
     color: var(--designcolor);
 }
 
 .hero {
     display: flex;
-    flex-direction: column;
     background-color: var(--alt-bgr-color);
-    padding: 200px 0;
+    min-height: 600px;
+
+    /* Прибрати з даного ДЗ */
+    background-image: url(../images/hero-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .title,
@@ -152,25 +158,27 @@ body {
 }
 
 .title {
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 30px;
+    color: var(--white-color);
+    margin: auto auto 30px auto;
 }
 
 .btn-service-order {
     width: 216px;
     height: 50px;
-    margin: 0 auto;
+    margin: 0 auto auto auto;
     background-color: var(--designcolor);
     font-weight: 700;
     font-size: 16px;
-    color: #fff;
+    line-height: 1.88;
     letter-spacing: 0.06em;
+    color: var(--white-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -184,7 +192,8 @@ body {
 
 .advantage {
     background-color: var(--bgr-color);
-    padding: 95px 215px;
+    padding-top: 95px;
+    padding-bottom: 95px;
 }
 
 .advantage-list {
@@ -197,7 +206,6 @@ body {
 }
 
 .advantage-list-item-description {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -222,8 +230,6 @@ body {
 }
 
 .types-of-work {
-    padding-right: 215px;
-    padding-left: 215px;
     padding-bottom: 95px;
     background-color: var(--bgr-color);
 }
@@ -234,7 +240,7 @@ body {
 }
 
 .team {
-    padding: 95px 215px;
+    padding: 95px 0;
     background-color: #f5f4fa;
 }
 
@@ -261,7 +267,6 @@ body {
 }
 
 .team-list-item-description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -298,7 +303,7 @@ body {
 .btn-filter:hover,
 .btn-filter:focus {
     background-color: var(--designcolor);
-    color: #fff;
+    color: var(--white-color);
 }
 
 .project-list {
@@ -320,13 +325,12 @@ body {
 }
 
 .project-list-description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
 
-.container {
+.project-list-item-container {
     width: 370px;
     height: 294px;
 }
@@ -341,14 +345,14 @@ body {
     outline: none;
 }
 
-footer {
+.footer {
     background-color: var(--alt-bgr-color);
     padding: 60px 215px;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .footer-logo {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .address-list {
@@ -356,7 +360,6 @@ footer {
 }
 
 .address-list-item {
-    font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 1.86;
@@ -368,7 +371,7 @@ footer {
     color: rgba(255, 255, 255, 1);
 }
 
-.address-list-item > .link:hover,
-.address-list-item > .link:focus {
+.address-link:hover,
+.address-link:focus {
     color: var(--designcolor);
 }
