@@ -56,13 +56,15 @@
     </header>
     <main>
         <section class="hero">
-            <div class="container">
-                <h1 class="title">
-                    Ефективні рішення для вашого бізнесу
-                </h1>
-                <button class="btn-service-order" type="button">
-                    Замовити послугу
-                </button>
+            <div class="overlay">
+                <div class="container">
+                    <h1 class="title">
+                        Ефективні рішення для вашого бізнесу
+                    </h1>
+                    <button class="btn-service-order" type="button">
+                        Замовити послугу
+                    </button>
+                </div>
             </div>
         </section>
         <section class="section advantage">
@@ -70,9 +72,11 @@
                 <h2 class="subtitle visually-hidden">Наші переваги</h2>
                 <ul class="advantage-list list">
                     <li class="advantage-list-item">
-                        <svg class="advantage-ico" width="270" height="120">
-                            <use xlink:href="./images/icons.svg#icon-antenna"></use>
-                        </svg>
+                        <div class="advantage-ico-container">
+                            <svg class="advantage-ico" width="70" height="70">
+                                <use xlink:href="./images/icons.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="advantage-list-item-title">
                             Увага до деталей
                         </h3>
@@ -82,9 +86,11 @@
                         </p>
                     </li>
                     <li class="advantage-list-item">
-                        <svg class="advantage-ico" width="270" height="120">
-                            <use xlink:href="./images/icons.svg#icon-clock"></use>
-                        </svg>
+                        <div class="advantage-ico-container">
+                            <svg class="advantage-ico" width="70" height="70">
+                                <use xlink:href="./images/icons.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="advantage-list-item-title">
                             Пунктуальність
                         </h3>
@@ -94,9 +100,11 @@
                         </p>
                     </li>
                     <li class="advantage-list-item">
-                        <svg class="advantage-ico" width="270" height="120">
-                            <use xlink:href="./images/icons.svg#icon-diagram"></use>
-                        </svg>
+                        <div class="advantage-ico-container">
+                            <svg class="advantage-ico" width="70" height="70">
+                                <use xlink:href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="advantage-list-item-title">
                             Планування
                         </h3>
@@ -106,9 +114,11 @@
                         </p>
                     </li>
                     <li class="advantage-list-item">
-                        <svg class="advantage-ico" width="270" height="120">
-                            <use xlink:href="./images/icons.svg#icon-astronaut"></use>
-                        </svg>
+                        <div class="advantage-ico-container">
+                            <svg class="advantage-ico" width="70" height="70">
+                                <use xlink:href="./images/icons.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
                         <h3 class="advantage-list-item-title">
                             Сучасні технології
                         </h3>
@@ -150,29 +160,33 @@
                                 Product Designer
                             </p>
                             <ul class="social-link-list list">
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://www.instagram.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://twitter.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://facebook.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://www.linkedin.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -189,29 +203,33 @@
                                 Frontend Developer
                             </p>
                             <ul class="social-link-list list">
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://www.instagram.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://twitter.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://facebook.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://www.linkedin.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -228,29 +246,33 @@
                                 Marketing
                             </p>
                             <ul class="social-link-list list">
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://www.instagram.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://twitter.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://facebook.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://www.linkedin.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -269,29 +291,33 @@
                                 UI Designer
                             </p>
                             <ul class="social-link-list list">
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://www.instagram.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://twitter.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://facebook.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="team-social-link link" href="#">
+                                <li class="social-list-item">
+                                    <a class="team-social-link link" href="https://www.linkedin.com/" target="_blank"
+                                        rel="noopener noreferrer">
                                         <svg class="icon" width="20" height="20">
                                             <use xlink:href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -383,29 +409,33 @@
                 <div class="footer-social-container">
                     <p class="social-link-caption">Приєднуйтесь</p>
                     <ul class="social-link-list list">
-                        <li>
-                            <a class="footer-social-link link" href="#">
+                        <li class="social-list-item">
+                            <a class="footer-social-link link" href="https://www.instagram.com/" target="_blank"
+                                rel="noopener noreferrer">
                                 <svg class="icon" width="20" height="20">
                                     <use xlink:href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
-                            <a class="footer-social-link link" href="#">
+                        <li class="social-list-item">
+                            <a class="footer-social-link link" href="https://twitter.com/" target="_blank"
+                                rel="noopener noreferrer">
                                 <svg class="icon" width="20" height="20">
                                     <use xlink:href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
-                            <a class="footer-social-link link" href="#">
+                        <li class="social-list-item">
+                            <a class="footer-social-link link" href="https://facebook.com/" target="_blank"
+                                rel="noopener noreferrer">
                                 <svg class="icon" width="20" height="20">
                                     <use xlink:href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
-                            <a class="footer-social-link link" href="#">
+                        <li class="social-list-item">
+                            <a class="footer-social-link link" href="https://www.linkedin.com/" target="_blank"
+                                rel="noopener noreferrer">
                                 <svg class="icon" width="20" height="20">
                                     <use xlink:href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>

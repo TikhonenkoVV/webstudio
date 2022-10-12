@@ -146,14 +146,19 @@ body {
 }
 
 .hero {
+    background-color: var(--alt-bgr-color);
+}
+
+.overlay {
+    width: 1600px;
+    margin: 0 200px;
     padding: 200px 0;
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero-background.jpg);
     background-repeat: no-repeat;
-    background-size: 1600px;
+    background-size: cover;
     background-position: center;
-    background-color: var(--alt-bgr-color);
 }
 
 .title,
@@ -210,9 +215,11 @@ body {
     flex: 0 0 270px;
 }
 
-.advantage-ico {
+.advantage-ico-container {
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
-    padding: 25px 100px;
+    padding: 25px 0;
     background-color: #f5f4fa;
     border-radius: 4px;
 }
@@ -295,13 +302,18 @@ body {
     gap: 10px;
 }
 
+.social-list-item {
+    width: 44px;
+    height: 44px;
+}
+
 .team-social-link,
 .footer-social-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -326,6 +338,7 @@ body {
 .clients-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .clients-list-item {
@@ -427,6 +440,7 @@ body {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-address-container {
