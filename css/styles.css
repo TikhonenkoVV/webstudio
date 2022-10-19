@@ -3,6 +3,7 @@
     --designcolor: #2196f3;
     --textcolor: #757575;
     --white-color: #fff;
+    --bgr-color: #f5f4fa;
     --alt-bgr-color: #2f303a;
     --icon-color: #afb1b8;
 }
@@ -32,22 +33,6 @@ body {
 
 .list {
     list-style: none;
-}
-
-.current-page {
-    color: var(--designcolor);
-}
-
-.current-page::after {
-    content: '';
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--designcolor);
 }
 
 .visually-hidden {
@@ -111,7 +96,6 @@ body {
 }
 
 .navigation-link {
-    position: relative;
     display: block;
     padding: 32px 0;
     font-weight: 500;
@@ -125,6 +109,23 @@ body {
 .navigation-link:hover,
 .navigation-link:focus {
     color: var(--designcolor);
+}
+
+.current-page {
+    position: relative;
+    color: var(--designcolor);
+}
+
+.current-page::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--designcolor);
 }
 
 .contacts-list {
@@ -237,7 +238,7 @@ body {
     align-items: center;
     height: 120px;
     margin-bottom: 30px;
-    background-color: #f5f4fa;
+    background-color: var(--bgr-color);
     border-radius: 4px;
 }
 
@@ -282,20 +283,22 @@ body {
 .types-of-work-subtitle {
     position: absolute;
     width: 100%;
-    padding: 27px 0;
+    height: 70px;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--white-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     background-color: rgba(47, 48, 58, 0.8);
 }
 
 .team {
-    background-color: #f5f4fa;
+    background-color: var(--bgr-color);
 }
 
 .team-list {
@@ -418,12 +421,13 @@ body {
     font-family: inherit;
     border: none;
     border-radius: 4px;
-    padding: 5px 25px;
+    padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    background-color: var(--bgr-color);
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -627,6 +631,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 .close-btn:hover {
