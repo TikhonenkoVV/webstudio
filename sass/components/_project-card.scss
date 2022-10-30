@@ -1,0 +1,54 @@
+.project-card {
+    display: block;
+    transition: box-shadow $transition;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &:hover &__overlay,
+    &:focus &__overlay {
+        transform: translateY(0);
+    }
+}
+
+.project-card__overlay-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card__overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 0 24px;
+    width: 100%;
+    height: 100%;
+    background-color: $designcolor;
+    opacity: 0.9;
+    transform: translateY(100%);
+    transition: transform $transition;
+}
+
+.project-card__description {
+    color: $white-color;
+    @include fontset($fw: inherit, $fs: 18px, $lh: 1.56, $ls: 0.03em);
+}
+
+.project-card__content-box {
+    padding: 20px 24px;
+    border: 1px solid #eee;
+    border-top: 0;
+}
+
+.project-card__title {
+    color: $titlecolor;
+    @include fontset($fw: 700, $fs: 18px, $lh: 2, $ls: 0.06em);
+    margin-bottom: 4px;
+}
+
+.project-card__caption {
+    @include fontset($fw: inherit, $fs: 16px, $lh: 1.88, $ls: 0.03em);
+}

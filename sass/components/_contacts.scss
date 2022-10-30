@@ -1,0 +1,25 @@
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.contacts__item {
+    @include fontset($fw: 500, $fs: 14px, $lh: 1.14, $ls: 0.02em);
+}
+
+.contacts__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 32px 0;
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+        color: $designcolor;
+    }
+}
+
+.contacts__icon {
+    margin-right: 10px;
+}

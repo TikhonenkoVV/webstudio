@@ -1,0 +1,18 @@
+%btn {
+    height: 50px;
+    margin: 0 auto;
+    background-color: $designcolor;
+    @include fontset($fw: 700, $fs: 16px, $lh: 1.88, $ls: 0.06em);
+    color: $white-color;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 15%);
+    transition: background-color $transition;
+}
+
+%title {
+    color: $titlecolor;
+    @include fontset($fw: 700, $fs: 36px, $lh: 1.17, $ls: 0.03em);
+    text-align: center;
+}

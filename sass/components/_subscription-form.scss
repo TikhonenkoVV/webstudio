@@ -1,0 +1,32 @@
+.subscription-form {
+    display: flex;
+}
+
+.subscription-form__input {
+    padding: 15px;
+    width: 358px;
+    color: $textcolor;
+    background-color: $alt-bgr-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: border $transition;
+    &:focus {
+        color: $white-color;
+        border: 1px solid $designcolor;
+        outline: none;
+    }
+}
+
+.subscription-form__btn {
+    @extend %btn;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    gap: 10px;
+    margin-left: 12px;
+    &:hover,
+    &:focus {
+        background-color: $btn-hover;
+    }
+}

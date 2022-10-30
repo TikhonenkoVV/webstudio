@@ -1,0 +1,34 @@
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav__link {
+    display: block;
+    padding: 32px 0;
+    @include fontset($fw: 500, $fs: 14px, $lh: 1.14, $ls: 0.02em);
+    color: $titlecolor;
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+        color: $designcolor;
+    }
+}
+
+.nav__link--current {
+    position: relative;
+    color: $designcolor;
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $designcolor;
+    }
+}

@@ -1,0 +1,31 @@
+.hero {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 200px 0;
+    text-align: center;
+    background-color: $alt-bgr-color;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__title {
+    width: 696px;
+    @include fontset($fw: 900, $fs: 44px, $lh: 1.36, $ls: 0.06em);
+    text-align: center;
+    text-transform: uppercase;
+    color: $white-color;
+    margin: 0 auto 30px auto;
+}
+
+.hero__btn {
+    @extend %btn;
+    width: 216px;
+
+    &:hover,
+    &:focus {
+        background-color: $btn-hover;
+    }
+}

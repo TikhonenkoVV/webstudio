@@ -1,0 +1,33 @@
+.advantage {
+    background-color: $white-color;
+}
+
+.advantage__list {
+    display: flex;
+    gap: 30px;
+}
+
+.advantage__item {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantage__icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $bgr-color;
+    border-radius: 4px;
+}
+
+.advantage__subtitle {
+    color: $titlecolor;
+    @include fontset($fw: 700, $fs: 14px, $lh: 1.14, $ls: 0.03em);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.advantage__description {
+    @include fontset($fw: inherit, $fs: 14px, $lh: 1.71, $ls: 0.03em);
+}

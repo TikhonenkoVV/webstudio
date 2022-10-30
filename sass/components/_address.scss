@@ -1,0 +1,25 @@
+.address {
+    @include fontset($fw: inherit, $fs: 14px, $lh: 1.86, $ls: 0.03em);
+    font-style: normal;
+}
+
+.address__item {
+    width: 231px;
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.address__link {
+    color: $white-color;
+    opacity: 0.6;
+    transition: color $transition;
+    &:hover,
+    &:focus {
+        color: $designcolor;
+    }
+    &--external {
+        opacity: 1;
+        transition: color $transition;
+    }
+}

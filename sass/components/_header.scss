@@ -1,0 +1,11 @@
+.header {
+    background-color: $white-color;
+    border-bottom: 1px solid #ececec;
+}
+
+.header__logo {
+    padding: 24px 0 25px;
+    .logo__span {
+        color: #000;
+    }
+}

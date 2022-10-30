@@ -1,0 +1,40 @@
+.footer {
+    background-color: $alt-bgr-color;
+    padding: 60px 0;
+    color: $white-color;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__address-box {
+    margin-right: 70px;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    .logo__span {
+        color: $white-color;
+    }
+}
+
+.footer__socials-box {
+    margin-right: 93px;
+}
+
+.footer__caption {
+    @include fontset($fw: 700, $fs: 14px, $lh: 1.14, $ls: 0.03em);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer__socials {
+    background-color: #44454e;
+    transition: background-color $transition;
+    &:hover,
+    &:focus {
+        background-color: $designcolor;
+    }
+}
