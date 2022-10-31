@@ -1,13 +1,4 @@
 .clients {
-    background-color: $white-color;
-}
-
-.clients__title {
-    @extend %title;
-    margin-bottom: 50px;
-}
-
-.clients__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -33,4 +24,8 @@
         color: $designcolor;
         border-color: $designcolor;
     }
+}
+
+.clients__icon {
+    fill: currentColor;
 }

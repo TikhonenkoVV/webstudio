@@ -1,3 +1,14 @@
 .section {
     padding: 94px 0;
+    background-color: $white-color;
+    &--no-padding-top {
+        padding-top: 0;
+    }
+    &--other-bgc {
+        background-color: $bgr-color;
+    }
+}
+
+.section__title {
+    @extend %title;
 }

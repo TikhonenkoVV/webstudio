@@ -192,13 +192,14 @@ h6 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__title, .team__title, .works__title {
+.section__title {
   color: #212121;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .container {
@@ -212,16 +213,16 @@ h6 {
   border-bottom: 1px solid #ececec;
 }
 
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__logo {
   padding: 24px 0 25px;
 }
 .header__logo .logo__span {
   color: #000;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .navigation {
@@ -300,15 +301,19 @@ h6 {
 }
 
 .contacts__icon {
-  margin-right: 10px;
-}
-
-.icon {
   fill: currentColor;
+  margin-right: 10px;
 }
 
 .section {
   padding: 94px 0;
+  background-color: #fff;
+}
+.section--no-padding-top {
+  padding-top: 0;
+}
+.section--other-bgc {
+  background-color: #f5f4fa;
 }
 
 .hero {
@@ -343,10 +348,6 @@ h6 {
 }
 
 .advantage {
-  background-color: #fff;
-}
-
-.advantage__list {
   display: flex;
   gap: 30px;
 }
@@ -365,7 +366,7 @@ h6 {
   border-radius: 4px;
 }
 
-.advantage__subtitle {
+.advantage__title {
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -383,15 +384,6 @@ h6 {
 }
 
 .works {
-  padding-top: 0;
-  background-color: #fff;
-}
-
-.works__title {
-  margin-bottom: 50px;
-}
-
-.works__list {
   display: flex;
   justify-content: space-between;
 }
@@ -437,15 +429,11 @@ h6 {
   border-radius: 50%;
 }
 
+.socials__icon {
+  fill: currentColor;
+}
+
 .team {
-  background-color: #f5f4fa;
-}
-
-.team__title {
-  margin-bottom: 50px;
-}
-
-.team__list {
   display: flex;
   justify-content: space-between;
 }
@@ -457,21 +445,11 @@ h6 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-card__container {
+.team__container {
   padding: 30px 0;
 }
 
-.team-card__title {
-  color: #212121;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.team-card__description {
+.team__description {
   font-weight: inherit;
   font-size: 16px;
   line-height: 1.19;
@@ -480,24 +458,16 @@ h6 {
   margin-bottom: 16px;
 }
 
-.team-card__socials {
+.team__socials {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-card__socials:hover, .team-card__socials:focus {
+.team__socials:hover, .team__socials:focus {
   color: #fff;
   background-color: #2196f3;
 }
 
 .clients {
-  background-color: #fff;
-}
-
-.clients__title {
-  margin-bottom: 50px;
-}
-
-.clients__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -524,8 +494,8 @@ h6 {
   border-color: #2196f3;
 }
 
-.projects {
-  background-color: #fff;
+.clients__icon {
+  fill: currentColor;
 }
 
 .projects-filter {
@@ -554,14 +524,14 @@ h6 {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.project-list {
+.projects {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.project-list__item {
+.projects__item {
   width: 370px;
 }
 
@@ -571,9 +541,6 @@ h6 {
 }
 .project-card:hover, .project-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.project-card:hover .project-card__overlay, .project-card:focus .project-card__overlay {
-  transform: translateY(0);
 }
 
 .project-card__overlay-box {
@@ -594,6 +561,9 @@ h6 {
   opacity: 0.9;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover .project-card__overlay, .project-card:focus .project-card__overlay {
+  transform: translateY(0);
 }
 
 .project-card__description {
@@ -726,6 +696,10 @@ h6 {
 }
 .subscription-form__btn:hover, .subscription-form__btn:focus {
   background-color: #188ce8;
+}
+
+.subscription-form__icon {
+  fill: currentColor;
 }
 
 .backdrop {

@@ -18,46 +18,43 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header-container">
-                <nav class="navigation">
-                    <a class="logo header__logo" href="./index.html" lang="en">Web<span
-                            class="logo__span">Studio</span></a>
-                    <ul class="nav">
-                        <li class="nav__item">
-                            <a class="nav__link" href="./index.html">Студія</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">Контакти</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="contacts">
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="mailto:info@devstudio.com">
-                            <svg class="icon contacts__icon" width="16" height="12">
-                                <use xlink:href="./images/icons.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com</a>
+        <div class="container header__container">
+            <nav class="navigation">
+                <a class="logo header__logo" href="./index.html" lang="en">Web<span class="logo__span">Studio</span></a>
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a class="nav__link" href="./index.html">Студія</a>
                     </li>
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="tel:+380961111111">
-                            <svg class="icon contacts__icon" width="10" height="16">
-                                <use xlink:href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
+                    <li class="nav__item">
+                        <a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Контакти</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="icon contacts__icon" width="16" height="12">
+                            <use xlink:href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <svg class="icon contacts__icon" width="10" height="16">
+                            <use xlink:href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
-        <section class="section projects">
+        <section class="section">
             <div class="container">
-                <h1 class="visually-hidden">Проекти</h1>
+                <h1 class="section__title visually-hidden">Проекти</h1>
                 <ul class="projects-filter">
                     <li>
                         <button class="projects-filter__btn" type="button">
@@ -85,8 +82,8 @@
                         </button>
                     </li>
                 </ul>
-                <ul class="project-list">
-                    <li class="project-list__item">
+                <ul class="projects">
+                    <li class="projects__item">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <img src="./images/tehnokrack.jpg" alt="Веб-сайт Технокряк" width="370" height="294" />
@@ -106,7 +103,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list__item">
+                    <li class="projects__item">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370"
@@ -127,7 +124,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list__item">
+                    <li class="projects__item">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370" height="294" />
@@ -147,7 +144,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list__item">
+                    <li class="projects__item">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <img src="./images/prime.jpg" alt="Проєкт Prime" width="370" height="294" />
@@ -167,7 +164,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list__item">
+                    <li class="projects__item">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <img src="./images/boxes.jpg" alt="Проєкт Boxes" width="370" height="294" />
@@ -187,7 +184,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list__item">
+                    <li class="projects__item">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <img src="./images/inspiration-has-no-borders.jpg"
@@ -208,7 +205,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list__item">
+                    <li class="projects__item">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <img src="./images/limited-edition.jpg" alt="Видання Limited Edition" width="370"
@@ -229,7 +226,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list__item">
+                    <li class="projects__item">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <img src="./images/lab.jpg" alt="Проєкт LAB" width="370" height="294" />
@@ -249,7 +246,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project-list__item">
+                    <li class="projects__item">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <img src="./images/growing-business.jpg" alt="Додаток Growing Business" width="370"
@@ -302,7 +299,7 @@
                         <li class="socials__item">
                             <a class="socials__link footer__socials" href="https://www.instagram.com/" target="_blank"
                                 rel="noopener noreferrer">
-                                <svg class="icon" width="20" height="20">
+                                <svg class="socials__icon" width="20" height="20">
                                     <use xlink:href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
@@ -310,7 +307,7 @@
                         <li class="socials__item">
                             <a class="socials__link footer__socials" href="https://twitter.com/" target="_blank"
                                 rel="noopener noreferrer">
-                                <svg class="icon" width="20" height="20">
+                                <svg class="socials__icon" width="20" height="20">
                                     <use xlink:href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
@@ -318,7 +315,7 @@
                         <li class="socials__item">
                             <a class="socials__link footer__socials" href="https://facebook.com/" target="_blank"
                                 rel="noopener noreferrer">
-                                <svg class="icon" width="20" height="20">
+                                <svg class="socials__icon" width="20" height="20">
                                     <use xlink:href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
@@ -326,7 +323,7 @@
                         <li class="socials__item">
                             <a class="socials__link footer__socials" href="https://www.linkedin.com/" target="_blank"
                                 rel="noopener noreferrer">
-                                <svg class="icon" width="20" height="20">
+                                <svg class="socials__icon" width="20" height="20">
                                     <use xlink:href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
@@ -342,7 +339,7 @@
                         </label>
                         <button class="subscription-form__btn" type="submit">
                             Підписатися
-                            <svg class="icon" width="24" height="24">
+                            <svg class="subscription-form__icon" width="24" height="24">
                                 <use xlink:href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>

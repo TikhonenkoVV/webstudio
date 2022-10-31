@@ -1,13 +1,4 @@
 .team {
-    background-color: $bgr-color;
-}
-
-.team__title {
-    @extend %title;
-    margin-bottom: 50px;
-}
-
-.team__list {
     display: flex;
     justify-content: space-between;
 }
@@ -18,4 +9,24 @@
     border-bottom-right-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__container {
+    padding: 30px 0;
+}
+
+.team__description {
+    @include fontset($fw: inherit, $fs: 16px, $lh: 1.19, $ls: 0.03em);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.team__socials {
+    color: $icon-color;
+    transition: color $transition, background-color $transition;
+    &:hover,
+    &:focus {
+        color: $white-color;
+        background-color: $designcolor;
+    }
 }

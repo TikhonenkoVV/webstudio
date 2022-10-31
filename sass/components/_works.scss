@@ -1,14 +1,4 @@
 .works {
-    padding-top: 0;
-    background-color: $white-color;
-}
-
-.works__title {
-    @extend %title;
-    margin-bottom: 50px;
-}
-
-.works__list {
     display: flex;
     justify-content: space-between;
 }

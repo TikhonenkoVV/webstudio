@@ -5,23 +5,19 @@
 @import './utils/placeholders';
 @import './components/container';
 @import './components/header';
-@import './components/header-container';
 @import './components/navigation';
 @import './components/logo';
 @import './components/nav';
 @import './components/contacts';
-@import './components/icon';
 @import './components/section';
 @import './components/hero';
 @import './components/advantage';
 @import './components/works';
 @import './components/socials';
 @import './components/team';
-@import './components/team-card';
 @import './components/clients';
-@import './components/projects';
 @import './components/projects-filter';
-@import './components/project-list';
+@import './components/projects';
 @import './components/project-card';
 @import './components/address';
 @import './components/footer';
@@ -29,6 +25,5 @@
 @import './components/backdrop';
 @import './components/modal';
 @import './components/send-form';
-
 @import './utils/vh';
 @import './utils/modal-open';

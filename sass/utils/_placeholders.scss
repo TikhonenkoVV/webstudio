@@ -15,4 +15,5 @@
     color: $titlecolor;
     @include fontset($fw: 700, $fs: 36px, $lh: 1.17, $ls: 0.03em);
     text-align: center;
+    margin-bottom: 50px;
 }
