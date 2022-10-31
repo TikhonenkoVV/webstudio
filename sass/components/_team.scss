@@ -15,6 +15,13 @@
     padding: 30px 0;
 }
 
+.team__title {
+    color: $titlecolor;
+    @include fontset($fw: 500, $fs: 16px, $lh: 1.19, $ls: 0.03em);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .team__description {
     @include fontset($fw: inherit, $fs: 16px, $lh: 1.19, $ls: 0.03em);
     text-align: center;

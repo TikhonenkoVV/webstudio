@@ -449,6 +449,16 @@ h6 {
   padding: 30px 0;
 }
 
+.team__title {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .team__description {
   font-weight: inherit;
   font-size: 16px;
