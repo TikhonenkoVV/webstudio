@@ -1,23 +1,59 @@
 .hero {
-    max-width: 1600px;
     margin: 0 auto;
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
     background-color: $alt-bgr-color;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/hero-background.jpg');
+    background-image: $lg, url('../images/mobile/hero/hero-480.jpg');
+    @include for-size(retina) {
+        background-image: $lg, url('../images/mobile/hero/hero-960.jpg');
+    }
+    @include for-size(retina-hd) {
+        background-image: $lg, url('../images/mobile/hero/hero-1440.jpg');
+    }
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include for-size(mobile) {
+        width: 480px;
+    }
+    @include for-size(tablet) {
+        background-image: $lg, url('../images/tablet/hero/hero-768.jpg');
+        width: 768px;
+        @include for-size(retina) {
+            background-image: $lg, url('../images/tablet/hero/hero-1536.jpg');
+        }
+        @include for-size(retina-hd) {
+            background-image: $lg, url('../images/tablet/hero/hero-2304.jpg');
+        }
+    }
+    @include for-size(desktop) {
+        width: 1600px;
+        padding: 200px 0;
+        background-image: $lg, url('../images/desktop/hero/hero-1600.jpg');
+        @include for-size(retina) {
+            background-image: $lg, url('../images/desktop/hero/hero-3200.jpg');
+        }
+        @include for-size(retina-hd) {
+            background-image: $lg, url('../images/desktop/hero/hero-4800.jpg');
+        }
+    }
 }
 
 .hero__title {
-    width: 696px;
-    @include fontset($fw: 900, $fs: 44px, $lh: 1.36, $ls: 0.06em);
+    @include fontset($fw: 900, $fs: 26px, $lh: 1.61, $ls: 0.06em);
     text-align: center;
     text-transform: uppercase;
     color: $white-color;
     margin: 0 auto 30px auto;
+
+    @include for-size(tablet) {
+        width: 360px;
+    }
+    @include for-size(desktop) {
+        @include fontset($fw: 900, $fs: 44px, $lh: 1.36, $ls: 0.06em);
+        width: 696px;
+    }
 }
 
 .hero__btn {

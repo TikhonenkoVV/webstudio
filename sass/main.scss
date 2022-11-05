@@ -27,3 +27,12 @@
 @import './components/send-form';
 @import './utils/vh';
 @import './utils/modal-open';
+
+.header,
+.section--no-padding-top,
+.section--other-bgc,
+.section__clients--tmp,
+.footer,
+.backdrop {
+    display: none;
+}
