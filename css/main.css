@@ -329,16 +329,22 @@ h6 {
   padding: 60px 0;
   background-color: #fff;
 }
-.section--no-padding-top {
-  padding-top: 0;
-}
-.section--other-bgc {
-  background-color: #f5f4fa;
-}
 @media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
   }
+}
+.section--no-padding-top {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section--no-padding-top {
+    padding-top: 0;
+    display: block;
+  }
+}
+.section--other-bgc {
+  background-color: #f5f4fa;
 }
 
 .hero {
@@ -1010,7 +1016,6 @@ h6 {
 }
 
 .header,
-.section--no-padding-top,
 .section--other-bgc,
 .section__clients--tmp,
 .footer,

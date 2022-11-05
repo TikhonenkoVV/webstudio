@@ -1,15 +1,19 @@
 .section {
     padding: 60px 0;
     background-color: $white-color;
-    &--no-padding-top {
-        padding-top: 0;
-    }
-    &--other-bgc {
-        background-color: $bgr-color;
-    }
 
     @include for-size(desktop) {
         padding: 94px 0;
+    }
+    &--no-padding-top {
+        display: none;
+        @include for-size(desktop) {
+            padding-top: 0;
+            display: block;
+        }
+    }
+    &--other-bgc {
+        background-color: $bgr-color;
     }
 }
 
