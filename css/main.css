@@ -195,11 +195,17 @@ h6 {
 .section__title {
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .container {
@@ -378,7 +384,7 @@ h6 {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    width: 100%;
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero/hero-1600.jpg");
   }
@@ -391,6 +397,11 @@ h6 {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero/hero-4800.jpg");
+  }
+}
+@media screen and (min-width: 1600px) {
+  .hero {
+    width: 1600px;
   }
 }
 
@@ -426,13 +437,28 @@ h6 {
   background-color: #188ce8;
 }
 
-.advantage {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .advantage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
-.advantage__item {
-  flex-basis: calc((100% - 90px) / 4);
+@media screen and (min-width: 768px) {
+  .advantage__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .advantage__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .advantage__icon-container {
@@ -453,6 +479,11 @@ h6 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767.98px) {
+  .advantage__title {
+    text-align: center;
+  }
 }
 
 .advantage__description {

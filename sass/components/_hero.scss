@@ -28,7 +28,7 @@
         }
     }
     @include for-size(desktop) {
-        width: 1600px;
+        width: 100%;
         padding: 200px 0;
         background-image: $lg, url('../images/desktop/hero/hero-1600.jpg');
         @include for-size(retina) {
@@ -37,6 +37,9 @@
         @include for-size(retina-hd) {
             background-image: $lg, url('../images/desktop/hero/hero-4800.jpg');
         }
+    }
+    @media screen and (min-width: 1600px) {
+        width: 1600px;
     }
 }
 
