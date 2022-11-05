@@ -614,13 +614,23 @@ h6 {
 
 .clients {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__item {
-  flex: 0 0 170px;
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
@@ -1035,7 +1045,6 @@ h6 {
 }
 
 .header,
-.section__clients--tmp,
 .footer,
 .backdrop {
   display: none;

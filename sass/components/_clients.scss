@@ -1,12 +1,18 @@
 .clients {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .clients__item {
-    flex: 0 0 170px;
+    flex-basis: calc((100% - 30px) / 2);
     height: 92px;
+    @include for-size(tablet) {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+    @include for-size(desktop) {
+        flex-basis: calc((100% - 150px) / 6);
+    }
 }
 
 .clients__link {
