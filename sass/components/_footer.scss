@@ -5,12 +5,31 @@
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+
+    @include for-size(tablet) {
+        display: flex;
+        align-items: baseline;
+    }
+    @include for-size(tablet-only) {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        row-gap: 60px;
+    }
+    @include for-size(desktop) {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        text-align: start;
+    }
 }
 
 .footer__address-box {
-    margin-right: 70px;
+    @include for-size(mobile-only) {
+        margin-bottom: 60px;
+    }
+    @include for-size(desktop) {
+        margin-right: 70px;
+    }
 }
 
 .footer__logo {
@@ -21,7 +40,16 @@
 }
 
 .footer__socials-box {
-    margin-right: 93px;
+    @include for-size(mobile-only) {
+        margin-bottom: 60px;
+    }
+}
+
+.footer__subscription {
+    width: 100%;
+    @include for-size(desktop) {
+        margin-left: 93px;
+    }
 }
 
 .footer__caption {

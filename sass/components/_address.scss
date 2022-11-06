@@ -4,9 +4,11 @@
 }
 
 .address__item {
-    width: 231px;
     &:not(:last-child) {
         margin-bottom: 9px;
+    }
+    @include for-size(desktop) {
+        width: 231px;
     }
 }
 

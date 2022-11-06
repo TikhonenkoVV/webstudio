@@ -1,10 +1,21 @@
 .subscription-form {
-    display: flex;
+    @include for-size(desktop) {
+        display: flex;
+    }
+}
+
+.subscription-form__label {
+    display: block;
+    @include for-size(desktop) {
+        flex-grow: 1;
+    }
 }
 
 .subscription-form__input {
+    display: block;
+    width: 100%;
     padding: 15px;
-    width: 358px;
+    margin: 0 auto 20px;
     color: $textcolor;
     background-color: $alt-bgr-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -14,6 +25,12 @@
         color: $white-color;
         border: 1px solid $designcolor;
         outline: none;
+    }
+    @include for-size(tablet-only) {
+        width: 450px;
+    }
+    @include for-size(desktop) {
+        margin: 0 auto;
     }
 }
 

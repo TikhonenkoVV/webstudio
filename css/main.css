@@ -256,10 +256,16 @@ h6 {
   display: block;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.6667;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .nav {
@@ -759,11 +765,13 @@ h6 {
   font-style: normal;
 }
 
-.address__item {
-  width: 231px;
-}
 .address__item:not(:last-child) {
   margin-bottom: 9px;
+}
+@media screen and (min-width: 1200px) {
+  .address__item {
+    width: 231px;
+  }
 }
 
 .address__link {
@@ -786,12 +794,38 @@ h6 {
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer__container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    text-align: start;
+  }
 }
 
-.footer__address-box {
-  margin-right: 70px;
+@media screen and (max-width: 767.98px) {
+  .footer__address-box {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__address-box {
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
@@ -801,8 +835,19 @@ h6 {
   color: #fff;
 }
 
-.footer__socials-box {
-  margin-right: 93px;
+@media screen and (max-width: 767.98px) {
+  .footer__socials-box {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__subscription {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footer__subscription {
+    margin-left: 93px;
+  }
 }
 
 .footer__caption {
@@ -822,13 +867,26 @@ h6 {
   background-color: #2196f3;
 }
 
-.subscription-form {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    display: flex;
+  }
+}
+
+.subscription-form__label {
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .subscription-form__label {
+    flex-grow: 1;
+  }
 }
 
 .subscription-form__input {
+  display: block;
+  width: 100%;
   padding: 15px;
-  width: 358px;
+  margin: 0 auto 20px;
   color: #757575;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -839,6 +897,16 @@ h6 {
   color: #fff;
   border: 1px solid #2196f3;
   outline: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .subscription-form__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription-form__input {
+    margin: 0 auto;
+  }
 }
 
 .subscription-form__btn {
@@ -1044,8 +1112,6 @@ h6 {
   overflow: hidden;
 }
 
-.header,
-.footer,
-.backdrop {
+.header {
   display: none;
 }/*# sourceMappingURL=main.css.map */
