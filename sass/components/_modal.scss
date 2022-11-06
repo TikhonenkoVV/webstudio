@@ -3,10 +3,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
+    width: calc(100% - 30px);
+    max-width: 450px;
     border-radius: 4px;
     background-color: $white-color;
     transition: transform $transition;
+    @include for-size(desktop) {
+        max-width: 528px;
+    }
 }
 
 .modal__btn {

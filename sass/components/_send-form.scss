@@ -83,10 +83,12 @@
 }
 
 .send-form__policy {
+    display: inline;
     color: $designcolor;
 }
 
 .send-form__icon-check {
+    flex-shrink: 0;
     border: 2px solid $titlecolor;
     border-radius: 2px;
     transition: border $transition, background-color $transition;
