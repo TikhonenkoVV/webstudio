@@ -5,12 +5,21 @@
 
 .header__container {
     display: flex;
-    justify-content: space-between;
+    // justify-content: flex-start;
 }
 
 .header__logo {
-    padding: 24px 0 25px;
+    padding: 16px 0;
     .logo__span {
         color: #000;
+    }
+
+    @include for-size(tablet) {
+        margin-right: 88px;
+        padding: 26px 0 25px;
+    }
+    @include for-size(desktop) {
+        margin-right: 92px;
+        padding: 25px;
     }
 }

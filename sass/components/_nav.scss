@@ -1,7 +1,11 @@
 .nav {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    display: none;
+
+    @include for-size(tablet) {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
 }
 
 .nav__link {

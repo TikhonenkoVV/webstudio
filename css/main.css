@@ -236,14 +236,25 @@ h6 {
 
 .header__container {
   display: flex;
-  justify-content: space-between;
 }
 
 .header__logo {
-  padding: 24px 0 25px;
+  padding: 16px 0;
 }
 .header__logo .logo__span {
   color: #000;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+    padding: 26px 0 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 92px;
+    padding: 25px;
+  }
 }
 
 .navigation {
@@ -251,13 +262,30 @@ h6 {
   gap: 95px;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-right: auto;
+  }
+}
+
+.navigation__mobile-menu {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: inherit;
+}
+@media screen and (min-width: 768px) {
+  .navigation__mobile-menu {
+    display: none;
+  }
+}
 
 .logo {
   display: block;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.6667;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
@@ -269,9 +297,14 @@ h6 {
 }
 
 .nav {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .nav__link {
@@ -305,15 +338,24 @@ h6 {
 }
 
 .contacts {
-  display: flex;
-  align-items: center;
-  gap: 25px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    gap: 25px;
+  }
 }
 
 .contacts__item {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 }
 
@@ -327,9 +369,37 @@ h6 {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__link--email {
+    padding-top: 21px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__link--tel {
+    padding-top: 5px;
+    padding-bottom: 19px;
+  }
+}
+
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__icon--email {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__icon--tel {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .section {
@@ -1121,6 +1191,6 @@ h6 {
   overflow: hidden;
 }
 
-.header {
+.section--tmp {
   display: none;
 }/*# sourceMappingURL=main.css.map */

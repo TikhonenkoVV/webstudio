@@ -1,11 +1,20 @@
 .contacts {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    display: none;
+    @include for-size(tablet) {
+        display: block;
+    }
+    @include for-size(desktop) {
+        display: flex;
+        gap: 25px;
+    }
 }
 
 .contacts__item {
-    @include fontset($fw: 500, $fs: 14px, $lh: 1.14, $ls: 0.02em);
+    @include fontset($fw: 500, $fs: 12px, $lh: 1.16, $ls: 0.02em);
+    @include for-size(desctop) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
 }
 
 .contacts__link {
@@ -20,7 +29,32 @@
     }
 }
 
+.contacts__link--email {
+    @include for-size(tablet-only) {
+        padding-top: 21px;
+        padding-bottom: 5px;
+    }
+}
+.contacts__link--tel {
+    @include for-size(tablet-only) {
+        padding-top: 5px;
+        padding-bottom: 19px;
+    }
+}
+
 .contacts__icon {
     fill: currentColor;
     margin-right: 10px;
+}
+.contacts__icon--email {
+    @include for-size(tablet-only) {
+        width: 14px;
+        height: 10px;
+    }
+}
+.contacts__icon--tel {
+    @include for-size(tablet-only) {
+        width: 10px;
+        height: 14px;
+    }
 }

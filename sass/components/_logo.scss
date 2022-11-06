@@ -1,7 +1,7 @@
 .logo {
     display: block;
     font-family: 'Raleway';
-    @include fontset($fw: 700, $fs: 24px, $lh: 1.6667, $ls: 0.03em);
+    @include fontset($fw: 700, $fs: 24px, $lh: 1.2, $ls: 0.03em);
     color: $designcolor;
     @include for-size(desktop) {
         font-size: 26px;
