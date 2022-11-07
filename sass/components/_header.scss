@@ -5,6 +5,7 @@
 
 .header__container {
     display: flex;
+    align-items: center;
 }
 
 .header__logo {
@@ -26,7 +27,6 @@
 .header__mobile-menu {
     width: 40px;
     height: 40px;
-    padding: 10px 0;
     margin-left: auto;
     border: none;
     background-color: inherit;
