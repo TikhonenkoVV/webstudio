@@ -3,6 +3,7 @@
     @include for-size(tablet) {
         display: block;
     }
+
     @include for-size(desktop) {
         display: flex;
         gap: 25px;

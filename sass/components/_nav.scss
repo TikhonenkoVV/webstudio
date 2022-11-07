@@ -1,6 +1,5 @@
 .nav {
     display: none;
-
     @include for-size(tablet) {
         display: flex;
         align-items: center;

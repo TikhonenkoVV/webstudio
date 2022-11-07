@@ -5,7 +5,6 @@
 
 .header__container {
     display: flex;
-    // justify-content: flex-start;
 }
 
 .header__logo {
@@ -21,5 +20,17 @@
     @include for-size(desktop) {
         margin-right: 92px;
         padding: 25px;
+    }
+}
+
+.header__mobile-menu {
+    width: 40px;
+    height: 40px;
+    padding: 10px 0;
+    margin-left: auto;
+    border: none;
+    background-color: inherit;
+    @include for-size(tablet) {
+        display: none;
     }
 }

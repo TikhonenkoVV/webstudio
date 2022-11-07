@@ -11,6 +11,14 @@
     transition: background-color $transition;
 }
 
+%btn-close {
+    position: absolute;
+    background-color: $white-color;
+    fill: #000;
+    transition: fill transition;
+    cursor: pointer;
+}
+
 %title {
     color: $titlecolor;
     @include fontset($fw: 700, $fs: 28px, $lh: 1.18, $ls: 0.03em);

@@ -94,7 +94,7 @@
     transition: border $transition, background-color $transition;
 }
 
-.send-form__checkbox:checked ~ .send-form__icon-check {
+.send-form__checkbox:checked .send-form__icon-check {
     background-color: $designcolor;
     border: none;
 }

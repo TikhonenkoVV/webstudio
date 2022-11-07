@@ -18,12 +18,60 @@
     <header class="header">
         <div class="container header__container">
             <a class="logo header__logo" href="./index.html" lang="en">Web<span class="logo__span">Studio</span></a>
+            <button class="header__mobile-menu" mobile-menu-open>
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-mobile-open"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu__wrapper" mobile-menu>
+                <div class="mobile-menu__container">
+                    <button class="mobile-menu__btn-close" type="button" mobile-menu-close>
+                        <svg width="40" height="40">
+                            <use xlink:href="./images/icons.svg#icon-mobile-close"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-menu__navigation">
+                        <ul class="mobile-menu__nav">
+                            <li class="mobile-menu__nav-item">
+                                <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+                            </li>
+                            <li class="mobile-menu__nav-item">
+                                <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+                            </li>
+                            <li class="mobile-menu__nav-item">
+                                <a class="mobile-menu__link" href="#">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="mobile-menu__contacts-link-tel" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+                    <a class="mobile-menu__contacts-link-email" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                    <ul class="mobile-menu__socials">
+                        <li class="mobile-menu__socials-item">
+                            <a class="mobile-menu__socials-link" href="https://www.instagram.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                Instagram</a>
+                        </li>
+                        <li class="mobile-menu__socials-item">
+                            <a class="mobile-menu__socials-link" href="https://twitter.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                Twitter</a>
+                        </li>
+                        <li class="mobile-menu__socials-item">
+                            <a class="mobile-menu__socials-link" href="https://facebook.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                Facebook</a>
+                        </li>
+                        <li class="mobile-menu__socials-item">
+                            <a class="mobile-menu__socials-link" href="https://www.linkedin.com/" target="_blank"
+                                rel="noopener noreferrer">
+                                LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <nav class="navigation">
-                <button class="navigation__mobile-menu">
-                    <svg width="40" height="40">
-                        <use href="./images/icons.svg#icon-mobile-open"></use>
-                    </svg>
-                </button>
                 <ul class="nav">
                     <li class="nav__item">
                         <a class="nav__link nav__link--current" href="./index.html">Студія</a>
@@ -629,6 +677,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

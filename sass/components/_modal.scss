@@ -14,18 +14,14 @@
 }
 
 .modal__btn {
-    position: absolute;
+    @extend %btn-close;
     top: 8px;
     right: 8px;
     padding: 5px;
     width: 30px;
     height: 30px;
-    background-color: $white-color;
-    fill: #000;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: fill $transition;
-    cursor: pointer;
     &:hover {
         fill: $designcolor;
     }
