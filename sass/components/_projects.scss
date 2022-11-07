@@ -7,6 +7,11 @@
 }
 
 .projects__item {
+    @include for-size(mobile-only) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
     @include for-size(mobile) {
         width: 450px;
     }
