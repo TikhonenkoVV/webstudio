@@ -1,8 +1,15 @@
 .projects-filter {
     display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+    margin-bottom: 40px;
+    @include for-size(tablet) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @include for-size(desktop) {
+        margin-bottom: 50px;
+    }
 }
 
 .projects-filter__btn {

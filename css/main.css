@@ -869,9 +869,20 @@ h6 {
 
 .projects-filter {
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .projects-filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-filter {
+    margin-bottom: 50px;
+  }
 }
 
 .projects-filter__btn {
@@ -893,19 +904,35 @@ h6 {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
-.projects__item {
-  width: 370px;
+@media screen and (min-width: 480px) {
+  .projects__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .project-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-card:hover, .project-card:focus {
@@ -942,8 +969,14 @@ h6 {
   line-height: 1.56;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 360px) {
+  .project-card__description {
+    font-size: 16px;
+  }
+}
 
 .project-card__content-box {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eee;
   border-top: 0;
@@ -1322,8 +1355,4 @@ h6 {
 
 .modal-open {
   overflow: hidden;
-}
-
-.section--tmp {
-  display: none;
 }/*# sourceMappingURL=main.css.map */

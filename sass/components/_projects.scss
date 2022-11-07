@@ -1,10 +1,19 @@
 .projects {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
+    @include for-size(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .projects__item {
-    width: 370px;
+    @include for-size(mobile) {
+        width: 450px;
+    }
+    @include for-size(tablet) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    @include for-size(desktop) {
+        flex-basis: calc((100% - 60px) / 3);
+    }
 }

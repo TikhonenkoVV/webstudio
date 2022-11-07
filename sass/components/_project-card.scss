@@ -1,5 +1,8 @@
 .project-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     transition: box-shadow $transition;
     &:hover,
     &:focus {
@@ -35,9 +38,13 @@
 .project-card__description {
     color: $white-color;
     @include fontset($fw: inherit, $fs: 18px, $lh: 1.56, $ls: 0.03em);
+    @include for-size(mobile-end) {
+        font-size: 16px;
+    }
 }
 
 .project-card__content-box {
+    flex-grow: 1;
     padding: 20px 24px;
     border: 1px solid #eee;
     border-top: 0;
