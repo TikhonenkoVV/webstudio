@@ -2,6 +2,7 @@
     display: none;
     @include for-size(tablet) {
         display: block;
+        padding: 21px 0;
     }
 
     @include for-size(desktop) {
@@ -12,7 +13,13 @@
 
 .contacts__item {
     @include fontset($fw: 500, $fs: 12px, $lh: 1.16, $ls: 0.02em);
-    @include for-size(desctop) {
+
+    @include for-size(tablet) {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    @include for-size(desktop) {
         font-size: 14px;
         line-height: 1.14;
     }
@@ -21,27 +28,28 @@
 .contacts__link {
     display: inline-flex;
     align-items: center;
-    padding: 32px 0;
     transition: color $transition;
 
     &:hover,
     &:focus {
         color: $designcolor;
     }
+    @include for-size(desktop) {
+        padding: 32px 0;
+    }
 }
 
-.contacts__link--email {
-    @include for-size(tablet-only) {
-        padding-top: 21px;
-        padding-bottom: 5px;
-    }
-}
-.contacts__link--tel {
-    @include for-size(tablet-only) {
-        padding-top: 5px;
-        padding-bottom: 19px;
-    }
-}
+// .contacts__link--email {
+//     @include for-size(tablet-only) {
+//         //
+//     }
+// }
+// .contacts__link--tel {
+//     @include for-size(tablet-only) {
+//         // padding-top: 5px;
+//         // padding-bottom: 19px;
+//     }
+// }
 
 .contacts__icon {
     fill: currentColor;

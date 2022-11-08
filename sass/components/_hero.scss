@@ -1,4 +1,5 @@
 .hero {
+    max-width: 1600px;
     margin: 0 auto;
     padding: 118px 0;
     text-align: center;
@@ -14,12 +15,8 @@
     background-size: cover;
     background-position: center;
 
-    @include for-size(mobile) {
-        width: 480px;
-    }
     @include for-size(tablet) {
         background-image: $lg, url('../images/tablet/hero/hero-768.jpg');
-        width: 768px;
         @include for-size(retina) {
             background-image: $lg, url('../images/tablet/hero/hero-1536.jpg');
         }
@@ -28,7 +25,6 @@
         }
     }
     @include for-size(desktop) {
-        width: 100%;
         padding: 200px 0;
         background-image: $lg, url('../images/desktop/hero/hero-1600.jpg');
         @include for-size(retina) {
