@@ -256,13 +256,13 @@ h6 {
 @media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 88px;
-    padding: 26px 0 25px;
+    padding: 26px 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-right: 92px;
-    padding: 25px 0;
+    padding: 24px 0 25px;
   }
 }
 
@@ -437,7 +437,7 @@ h6 {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 1.1666;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
@@ -528,7 +528,7 @@ h6 {
 }
 
 .contacts__link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1248,9 +1248,14 @@ h6 {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .send-form__caption {
+    line-height: 1.15;
+  }
 }
 
 .send-form__field {
@@ -1326,16 +1331,22 @@ h6 {
   gap: 7px;
   margin-bottom: 30px;
   font-weight: inherit;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.6667;
   letter-spacing: 0.03em;
   color: #757575;
   fill: #fff;
 }
+@media screen and (min-width: 1200px) {
+  .send-form__accept-field {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .send-form__policy {
-  display: inline;
   color: #2196f3;
+  text-decoration: underline;
 }
 
 .send-form__icon-check {
@@ -1344,7 +1355,6 @@ h6 {
   border-radius: 2px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .send-form__checkbox:checked .send-form__icon-check {
   background-color: #2196f3;
   border: none;

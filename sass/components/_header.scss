@@ -16,11 +16,11 @@
 
     @include for-size(tablet) {
         margin-right: 88px;
-        padding: 26px 0 25px;
+        padding: 26px 0;
     }
     @include for-size(desktop) {
         margin-right: 92px;
-        padding: 25px 0;
+        padding: 24px 0 25px;
     }
 }
 

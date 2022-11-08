@@ -7,8 +7,11 @@
     margin-bottom: 12px;
     color: $titlecolor;
     font-style: normal;
-    @include fontset($fw: 700, $fs: 20px, $lh: 1.15, $ls: 0.03em);
+    @include fontset($fw: 700, $fs: 20px, $lh: 1.5, $ls: 0.03em);
     text-align: center;
+    @include for-size(desktop) {
+        line-height: 1.15;
+    }
 }
 
 .send-form__field {
@@ -77,14 +80,18 @@
     align-items: center;
     gap: 7px;
     margin-bottom: 30px;
-    @include fontset($fw: inherit, $fs: 14px, $lh: 1.71, $ls: 0.03em);
+    @include fontset($fw: inherit, $fs: 12px, $lh: 1.6667, $ls: 0.03em);
     color: $textcolor;
     fill: $white-color;
+    @include for-size(desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .send-form__policy {
-    display: inline;
     color: $designcolor;
+    text-decoration: underline;
 }
 
 .send-form__icon-check {
@@ -92,11 +99,10 @@
     border: 2px solid $titlecolor;
     border-radius: 2px;
     transition: border $transition, background-color $transition;
-}
-
-.send-form__checkbox:checked .send-form__icon-check {
-    background-color: $designcolor;
-    border: none;
+    .send-form__checkbox:checked & {
+        background-color: $designcolor;
+        border: none;
+    }
 }
 
 .send-form__btn {
