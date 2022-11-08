@@ -2,6 +2,9 @@
     display: none;
     @include for-size(tablet) {
         display: block;
+    }
+
+    @include for-size(tablet-only) {
         padding: 21px 0;
     }
 
@@ -14,7 +17,7 @@
 .contacts__item {
     @include fontset($fw: 500, $fs: 12px, $lh: 1.16, $ls: 0.02em);
 
-    @include for-size(tablet) {
+    @include for-size(tablet-only) {
         &:not(:last-child) {
             margin-bottom: 10px;
         }
@@ -38,18 +41,6 @@
         padding: 32px 0;
     }
 }
-
-// .contacts__link--email {
-//     @include for-size(tablet-only) {
-//         //
-//     }
-// }
-// .contacts__link--tel {
-//     @include for-size(tablet-only) {
-//         // padding-top: 5px;
-//         // padding-bottom: 19px;
-//     }
-// }
 
 .contacts__icon {
     fill: currentColor;

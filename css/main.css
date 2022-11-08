@@ -495,6 +495,10 @@ h6 {
 @media screen and (min-width: 768px) {
   .contacts {
     display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts {
     padding: 21px 0;
   }
 }
@@ -511,7 +515,7 @@ h6 {
   line-height: 1.16;
   letter-spacing: 0.02em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
