@@ -110,35 +110,25 @@
         <section class="section">
             <div class="container">
                 <h1 class="section__title visually-hidden">Проекти</h1>
-                <ul class="projects-filter">
-                    <li>
-                        <button class="projects-filter__btn" type="button">
-                            Усі
-                        </button>
-                    </li>
-                    <li>
-                        <button class="projects-filter__btn" type="button">
-                            Веб-сайти
-                        </button>
-                    </li>
-                    <li>
-                        <button class="projects-filter__btn" type="button">
-                            Додатки
-                        </button>
-                    </li>
-                    <li>
-                        <button class="projects-filter__btn" type="button">
-                            Дизайн
-                        </button>
-                    </li>
-                    <li>
-                        <button class="projects-filter__btn" type="button">
-                            Маркетинг
-                        </button>
-                    </li>
-                </ul>
+                <div class="projects-filter">
+                    <button data-filter="all" class="projects-filter__btn projects-filter__btn--current" type="button">
+                        Усі
+                    </button>
+                    <button data-filter="website" class="projects-filter__btn" type="button">
+                        Веб-сайти
+                    </button>
+                    <button data-filter="app" class="projects-filter__btn" type="button">
+                        Додатки
+                    </button>
+                    <button data-filter="design" class="projects-filter__btn" type="button">
+                        Дизайн
+                    </button>
+                    <button data-filter="marketing" class="projects-filter__btn" type="button">
+                        Маркетинг
+                    </button>
+                </div>
                 <ul class="projects">
-                    <li class="projects__item">
+                    <li class="projects__item website">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <picture>
@@ -189,7 +179,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item design">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <picture>
@@ -239,7 +229,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item app">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <picture>
@@ -288,7 +278,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item marketing">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <picture>
@@ -340,7 +330,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item app">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <picture>
@@ -389,7 +379,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item website">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <picture>
@@ -442,7 +432,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item design">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <picture>
@@ -495,7 +485,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item marketing">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <picture>
@@ -546,7 +536,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="projects__item">
+                    <li class="projects__item app">
                         <a href="#" class="project-card">
                             <div class="project-card__overlay-box">
                                 <picture>
@@ -684,6 +674,7 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/filter.js"></script>
 </body>
 
 </html>

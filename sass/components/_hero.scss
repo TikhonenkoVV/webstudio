@@ -1,43 +1,47 @@
 .hero {
+    $file: 'hero';
     max-width: 1600px;
     margin: 0 auto;
     padding: 118px 0;
     text-align: center;
     background-color: $alt-bgr-color;
-    background-image: $lg, url('../images/mobile/hero/hero-480.jpg');
+    background-image: $lg, url('../images/mobile/hero/hero.jpg');
     @include for-size(retina) {
-        background-image: $lg, url('../images/mobile/hero/hero-960.jpg');
+        background-image: $lg, url('../images/mobile/hero/hero@2.jpg');
     }
     @include for-size(retina-hd) {
-        background-image: $lg, url('../images/mobile/hero/hero-1440.jpg');
+        background-image: $lg, url('../images/mobile/hero/hero@3.jpg');
     }
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    @include for-size(tablet) {
-        background-image: $lg, url('../images/tablet/hero/hero-768.jpg');
+    @include for-size(small) {
+        background-image: $lg, url('../images/tablet/hero/hero.jpg');
         @include for-size(retina) {
-            background-image: $lg, url('../images/tablet/hero/hero-1536.jpg');
+            background-image: $lg, url('../images/tablet/hero/hero@2.jpg');
         }
         @include for-size(retina-hd) {
-            background-image: $lg, url('../images/tablet/hero/hero-2304.jpg');
+            background-image: $lg, url('../images/tablet/hero/hero@3.jpg');
+        }
+    }
+    @include for-size(medium) {
+        background-image: $lg, url('../images/desktop/hero/hero.jpg');
+        @include for-size(retina) {
+            background-image: $lg, url('../images/desktop/hero/hero@2.jpg');
+        }
+        @include for-size(retina-hd) {
+            background-image: $lg, url('../images/desktop/hero/hero@3.jpg');
         }
     }
     @include for-size(desktop) {
         padding: 200px 0;
-        background-image: $lg, url('../images/desktop/hero/hero-1600.jpg');
-        @include for-size(retina) {
-            background-image: $lg, url('../images/desktop/hero/hero-3200.jpg');
-        }
-        @include for-size(retina-hd) {
-            background-image: $lg, url('../images/desktop/hero/hero-4800.jpg');
-        }
-    }
-    @media screen and (min-width: 1600px) {
-        width: 1600px;
     }
 }
+
+// .hero {
+//     @include backgroundImageRetina($file: 'mobile-hero');
+// }
 
 .hero__title {
     @include fontset($fw: 900, $fs: 26px, $lh: 1.61, $ls: 0.06em);
